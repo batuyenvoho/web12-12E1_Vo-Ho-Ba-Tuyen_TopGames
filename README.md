@@ -6,14 +6,14 @@
 
 ## 🚀 Tính năng chính
 * **Giao diện Responsive:** Hiển thị tối ưu trên mọi kích thước màn hình (Desktop, Tablet, Mobile) nhờ hệ thống CSS Grid và Flexbox.
-* **Hệ thống Giỏ hàng (Smart Cart):** Xử lý logic tính toán giá tiền, cập nhật số lượng sản phẩm thời gian thực bằng Vanilla JavaScript.
+* **Hệ thống Giỏ hàng (Smart Cart):** Xử lý logic tính toán giá tiền, cập nhật số lượng sản phẩm thời gian thực bằng JavaScript.
 * **Thiết kế UI/UX Gaming:** Sử dụng bảng màu Dark Mode (Tím, Cyan, Đen) tạo cảm giác công nghệ và lôi cuốn.
 * **Danh mục sản phẩm đa dạng:** Từ các siêu phẩm như GTA VI, Elden Ring đến các thiết bị phần cứng chuyên dụng.
 
 ---
 
 ## 🛠 Công nghệ sử dụng
-* **Frontend:** HTML5, CSS3 (Media Queries, Animations).
+* **Frontend:** HTML5, CSS.
 * **Logic:** JavaScript.
 * **Công cụ:** GitHub Desktop, VS Code.
 
@@ -27,7 +27,7 @@
 
 ---
 
-## 📝 Ghi chú đồ án
+## 📝 Ghi chú dự án
 Dự án được thực hiện cá nhân trong khuôn khổ đồ án phát triển Website 2026. Tập trung vào việc nắm vững nền tảng lập trình web và tư duy thiết kế hệ thống thương mại điện tử cơ bản.
 
 **Người thực hiện:** Võ Hồ Bá Tuyên

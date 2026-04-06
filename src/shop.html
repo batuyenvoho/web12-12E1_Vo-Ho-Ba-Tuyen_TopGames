@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections | TopGames</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../publish/shop.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">TOP<span>GAMES</span></div>
+      <div class="menu-icon" id="menu-icon">
+        <i class="fa-solid fa-bars" id="menu-icon-i"></i>
+      </div>
+      <nav id="main-nav">
+        <ul id="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="shop.html" class="active-link">Collections</a></li>
+          <li><a href="/src/blog.html">Browse</a></li>
+          <li><a href="/src/contact.html">Contact</a></li>
+          <li><a href="/src/about.html">About Us</a></li>
+          <li>
+            <a href="/src/cart.html" class="btn-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="shop-banner">
+      <img src="/assets/header.jpg" alt="" class="shop-banner-img"/>
+    </section>
+
+    <!-- Shop section -->
+    <section class="shop-section">
+      <aside class="filter-sidebar" id="filter-sidebar">
+        <div class="filter-header">
+          <h3><i class="fa-solid fa-sliders"></i> FILTERS</h3>
+          <button class="filter-close-btn" id="filter-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label">SEARCH</label>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search games..." />
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label">PRICE RANGE</label>
+          <div class="checkbox-list">
+            <label class="check-item">
+              <input type="checkbox" class="price-filter" value="0-30" /> Under
+              $30
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="price-filter" value="30-50" /> $30 –
+              $50
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="price-filter" value="50-70" /> $50 –
+              $70
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="price-filter" value="70-999" />
+              Above $70
+            </label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label">GENRE</label>
+          <div class="checkbox-list">
+            <label class="check-item">
+              <input type="checkbox" class="genre-filter" value="action" />
+              Action
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="genre-filter" value="rpg" /> RPG
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="genre-filter" value="sports" />
+              Sports
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="genre-filter" value="shooter" />
+              Shooter
+            </label>
+            <label class="check-item">
+              <input type="checkbox" class="genre-filter" value="adventure" />
+              Adventure
+            </label>
+          </div>
+        </div>
+
+        <button class="btn-reset-filters" id="reset-filters">
+          <i class="fa-solid fa-rotate-left"></i> RESET
+        </button>
+      </aside>
+
+      <div class="shop-main">
+        <div class="shop-toolbar">
+          <p class="result-count">
+            Showing <span id="product-count">16</span> games
+          </p>
+          <button class="filter-toggle-btn" id="filter-toggle-btn">
+            <i class="fa-solid fa-sliders"></i> Filters
+          </button>
+        </div>
+
+        <div class="shop-product-grid" id="product-grid">
+          <div
+            class="product-card"
+            data-name="Elden Ring"
+            data-price="59.99"
+            data-genre="rpg">
+            <a href="/src/product.html" class="product-link">
+              <img src="../assets/product1.jpg" alt="Elden Ring" />
+              <div class="product-details">
+              <h5>Elden Ring</h5>
+            </a>
+              <div class="price-row">
+                <span class="price">$59.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Marvel's Spider-Man 2"
+            data-price="69.99"
+            data-genre="action">
+            <img src="../assets/product2.jpg" alt="Marvel's Spider-Man 2" />
+            <div class="product-details">
+              <h5>Marvel's Spider-Man 2</h5>
+              <div class="price-row">
+                <span class="price">$69.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Cyberpunk 2077"
+            data-price="49.99"
+            data-genre="rpg">
+            <img src="../assets/product3.jpg" alt="Cyberpunk 2077" />
+            <div class="product-details">
+              <h5>Cyberpunk 2077</h5>
+              <div class="price-row">
+                <span class="price">$49.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="God of War Ragnarök"
+            data-price="69.99"
+            data-genre="action">
+            <img src="../assets/product4.jpg" alt="God of War Ragnarök" />
+            <div class="product-details">
+              <h5>God of War Ragnarök</h5>
+              <div class="price-row">
+                <span class="price">$69.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Resident Evil Requiem"
+            data-price="39.99"
+            data-genre="action">
+            <img src="../assets/product5.jpg" alt="Resident Evil Requiem" />
+            <div class="product-details">
+              <h5>Resident Evil Requiem</h5>
+              <div class="price-row">
+                <span class="price">$39.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Red Dead Redemption 2"
+            data-price="69.99"
+            data-genre="adventure">
+            <img src="../assets/product6.jpg" alt="Red Dead Redemption 2" />
+            <div class="product-details">
+              <h5>Red Dead Redemption 2</h5>
+              <div class="price-row">
+                <span class="price">$69.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Assassin's Creed Valhalla"
+            data-price="29.99"
+            data-genre="action">
+            <img src="../assets/product7.jpg" alt="Assassin's Creed Valhalla" />
+            <div class="product-details">
+              <h5>Assassin's Creed Valhalla</h5>
+              <div class="price-row">
+                <span class="price">$29.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Ghost of Tsushima"
+            data-price="40.00"
+            data-genre="adventure">
+            <img src="../assets/product8.jpg" alt="Ghost of Tsushima" />
+            <div class="product-details">
+              <h5>Ghost of Tsushima</h5>
+              <div class="price-row">
+                <span class="price">$40.00</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="EA Sports FC 2026"
+            data-price="69.99"
+            data-genre="sports">
+            <span class="badge-new">NEW</span>
+            <img src="../assets/new_product1.jpg" alt="EA Sports FC 2026" />
+            <div class="product-details">
+              <h5>EA Sports FC 2026</h5>
+              <div class="price-row">
+                <span class="price">$69.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Grand Theft Auto VI"
+            data-price="79.99"
+            data-genre="action">
+            <span class="badge-new">NEW</span>
+            <img src="../assets/new_product2.jpg" alt="Grand Theft Auto VI" />
+            <div class="product-details">
+              <h5>Grand Theft Auto VI</h5>
+              <div class="price-row">
+                <span class="price">$79.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="NBA 2K26"
+            data-price="59.99"
+            data-genre="sports">
+            <span class="badge-new">NEW</span>
+            <img src="../assets/new_product3.jpg" alt="NBA 2K26" />
+            <div class="product-details">
+              <h5>NBA 2K26</h5>
+              <div class="price-row">
+                <span class="price">$59.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="WWE 2K26"
+            data-price="69.99"
+            data-genre="sports">
+            <span class="badge-new">NEW</span>
+            <img src="../assets/new_product4.jpg" alt="WWE 2K26" />
+            <div class="product-details">
+              <h5>WWE 2K26</h5>
+              <div class="price-row">
+                <span class="price">$69.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Call of Duty: Black Ops 7"
+            data-price="49.99"
+            data-genre="shooter">
+            <span class="badge-new">NEW</span>
+            <img
+              src="../assets/new_product5.jpg"
+              alt="Call of Duty: Black Ops 7" />
+            <div class="product-details">
+              <h5>Call of Duty: Black Ops 7</h5>
+              <div class="price-row">
+                <span class="price">$49.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Battlefield 6"
+            data-price="59.99"
+            data-genre="shooter">
+            <span class="badge-new">NEW</span>
+            <img src="../assets/new_product6.jpg" alt="Battlefield 6" />
+            <div class="product-details">
+              <h5>Battlefield 6</h5>
+              <div class="price-row">
+                <span class="price">$59.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="Black Myth: Wukong"
+            data-price="59.99"
+            data-genre="rpg">
+            <span class="badge-new">NEW</span>
+            <img src="../assets/new_product7.jpg" alt="Black Myth: Wukong" />
+            <div class="product-details">
+              <h5>Black Myth: Wukong</h5>
+              <div class="price-row">
+                <span class="price">$59.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="product-card"
+            data-name="007 First Light"
+            data-price="69.99"
+            data-genre="adventure">
+            <span class="badge-new">NEW</span>
+            <img src="../assets/new_product8.jpg" alt="007 First Light" />
+            <div class="product-details">
+              <h5>007 First Light</h5>
+              <div class="price-row">
+                <span class="price">$69.99</span>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="no-results" id="no-results" style="display: none">
+          <i class="fa-solid fa-gamepad"></i>
+          <p>No games found.</p>
+          <button id="no-results-reset">Reset Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h1 class="footer-logo">TOP<span>GAMES</span></h1>
+          <div class="contact-info">
+            <p>
+              <strong>Address:</strong> District 7, Ho Chi Minh City, Vietnam
+            </p>
+            <p><strong>Phone:</strong> +84 912 142 647</p>
+            <p><strong>Hours:</strong> 08:00 - 20:00, Mon - Sun</p>
+          </div>
+          <div class="social-links">
+            <h4>FOLLOW US</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Delivery Info</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>My Account</h3>
+          <ul>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">View Cart</a></li>
+            <li><a href="#">My Wishlist</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Install App</h3>
+          <p>From App Store or Google Play</p>
+          <div class="app-buttons">
+            <button class="app-btn">
+              <i class="fa-brands fa-apple"></i> App Store
+            </button>
+            <button class="app-btn">
+              <i class="fa-brands fa-google-play"></i> Google Play
+            </button>
+          </div>
+          <p>Secured Payment Gateways</p>
+          <div class="payment-icons">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026, TopGames - Vo Ho Ba Tuyen</p>
+      </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-# 🎮 TOPGAMES - DIGITAL STOREFRONT
+# 🎮 TOPGAMES
 
 **TopGames** là một dự án website thương mại điện tử hiện đại dành cho cộng đồng game thủ. Website được thiết kế với phong cách Dark Mode chuyên nghiệp, tối ưu hóa trải nghiệm mua sắm các tựa game bom tấn và thiết bị gaming hàng đầu.
 
